@@ -1,7 +1,7 @@
 from typing import List
 
 # Global vars go here
-DAY_1_INPUT_PATH = '/Users/tom/advent_of_code/day1.txt'
+INPUT_PATH = '/Users/tom/advent_of_code/day1.txt'
 
 
 def count_increases(depths: List[int]) -> int:
@@ -39,7 +39,7 @@ def count_sliding_window_increases(depths: List[int]) -> int:
 
 def main():
     # Open file and read input into a list
-    file = open(DAY_1_INPUT_PATH)
+    file = open(INPUT_PATH)
     puzzle_input = file.read().splitlines()
     puzzle_input = list(map(int, puzzle_input))  # convert strings to ints
 
